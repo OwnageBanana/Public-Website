@@ -1,0 +1,113 @@
+@import url("/src/assets/themes.module.css");
+@import url("/src/assets/icons.module.css");
+
+/* styles.css contains the majority of the styling needed for the base site that is used on every page */
+* {
+  transition: color 0.01s linear;
+}
+
+.full-view {
+  height: auto;
+  width: auto;
+  /* mobile helper */
+  min-height: 100%; /* fallback */
+  min-height: 100vh;
+}
+
+html {
+  font-size:20px;
+  font-family: 'IBM Plex Mono', 'Consolas', 'Courier New', monospace;
+  color: var(--main-darker);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  height: auto;
+  width: auto;
+  width: 100%;
+  /* mobile helper */
+  min-height: 100%; /* fallback */
+  min-height: 100vh;
+}
+
+@media (min-width: 640px){
+  html {
+    font-size:16px;
+  }
+}
+
+@media (min-width: 1024px){
+  html {
+    font-size:18px;
+  }
+}
+
+body {
+  background-color: var(--complement-lighter);
+  margin:0px;
+
+  height: auto;
+  width: auto;
+  /* mobile helper */
+  min-height: 100%; /* fallback */
+  min-height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size:2rem;
+}
+
+p {
+  margin:0.5rem 0;
+}
+
+/* List element */
+dt::before {
+  content:"•";
+  font-family: 'Courier New', Courier, monospace;
+  margin:0 0.5rem;
+}
+
+dd::before {
+  content:"◦";
+  font-family: 'Courier New', Courier, monospace;
+  margin:0 0.5rem;
+}
+
+/* anchor element */
+a {
+  color: var(--complement-bright);
+}
+
+a:hover {
+  color: var(--complement-light);
+}
+
+/* active link */
+a.router-link-active {
+  color: var(--contrast);
+}
+a.router-link-active:hover {
+  color: var(--contrast);
+}
+
+/*anchor element: dark */
+html.dark a:hover {
+  color: var(--complement);
+}
+html.dark a.router-link-active:hover {
+  color: var(--contrast);
+}
+
+@media (min-width:640px) {
+  br {
+    display:none;
+  }
+}
+
