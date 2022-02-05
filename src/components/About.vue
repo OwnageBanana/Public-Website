@@ -51,7 +51,7 @@ let sectionSelection = ref({tech:false, });
 </template>
 
 <style scoped>
-@import url("/src/assets/sections.module.css");
+@import url("/src/assets/modules/sections.module.css");
 
 .layout {
   display: flex;
