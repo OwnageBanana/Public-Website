@@ -32,7 +32,8 @@ import Footer from '@layout/Footer.vue'
 @media (min-width: 1024px) {
   .main-view {
     margin: 0 auto;
-    max-width: 75%;
+    width:1024px;
+    /* max-width: 75%; */
   }
 }
 </style>
