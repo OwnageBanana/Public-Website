@@ -57,7 +57,8 @@
   --complement: #a8fa8d;
   --complement-bright: #42b983;
   --complement-light: #2c2c2c;
-  --complement-lighter: #141414;
+  --complement-lighter: #1b1a1a;
+  /* --complement-lighter: #141414; */
 }
 /* @media (prefers-color-scheme: dark) { */
   /* :root{
