@@ -15,7 +15,7 @@ let sectionSelection = ref("tech");
   <div class="layout">
     <div>
       <div class="pfp-container">
-        <img class="pfp" src="src\assets\images\pfp.jpg" height="208px" width="208px">
+        <img class="pfp" src="\src\assets\images\pfp.jpg" height="208px" width="208px">
       </div>
       <h3>About Me:</h3>
       <p>

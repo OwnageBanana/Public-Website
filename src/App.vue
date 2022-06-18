@@ -68,11 +68,12 @@ let scrollToTop = () => {
   cursor: pointer;
   position: fixed;
   right: 2rem;
-  bottom: 2rem;
+  bottom: 2.5rem;
   height: 3rem;
   width: 3rem;
   border-radius: 9999px;
   background-color: var(--main-lighter);
+  border: 2px solid var(--main-light);
   /* box-shadow: ; */
 }
 .icon-container {
@@ -86,9 +87,17 @@ let scrollToTop = () => {
   .scroll-top-button {
     width: 4rem;
     height: 4rem;
+    bottom: 2.5rem;
+    right: 15%;
   }
   .icon-container > svg {
     width: 2rem;
+  }
+}
+@media (min-width: 2000px) {
+  .scroll-top-button {
+    bottom: 3rem;
+    right: 20%;
   }
 }
 </style>

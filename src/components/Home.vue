@@ -30,7 +30,7 @@ import { ref } from 'vue'
           At-Home Pi Server
         </h2>
         <div class="article-stub-body">
-          <img src="src\assets\images\pi_on_floor_small.jpg" alt="image of a raspberry pi on my dirty floor"  width="150" />
+          <img src="\src\assets\images\pi_on_floor_small.jpg" alt="image of a raspberry pi on my dirty floor"  width="150" />
           Building a Pi server from the ground up has been a lot of things, primarily its been a bad decision!
         </div>
       </div>
@@ -41,7 +41,7 @@ import { ref } from 'vue'
           Building a keyboard
         </h2>
         <div class="article-stub-body">
-          <img src="src\assets\images\3d_printed_pcb_small.jpg" alt="Image of a 3d printed pcb" width="150"/>
+          <img src="\src\assets\images\3d_printed_pcb_small.jpg" alt="Image of a 3d printed pcb" width="150"/>
           A project for the ages, vastly underestimated, poorly planed and awfully timed during a chip shortage
           but glory is found on the hard-fought path and keyboard clack waits for no man!
         </div>
@@ -55,15 +55,15 @@ import { ref } from 'vue'
       What I'm Reading
     </h1>
     <div class="reading-list">
-      <img src="src\assets\images\books\neuromancer.jpg"  width="150"/>
-      <img src="src\assets\images\books\1984.jpg"  width="150"/>
-      <img src="src\assets\images\books\change_your_mind.jpg"  width="150"/>
-      <img src="src\assets\images\books\dune_1.jpg"  width="150"/>
-      <img src="src\assets\images\books\mind_on_plants.jpg"  width="150"/>
-      <img src="src\assets\images\books\richdad.jpg"  width="150"/>
-      <img src="src\assets\images\books\fahrenheit.jpg"  width="150"/>
-      <img src="src\assets\images\books\dune_2.jpg"  width="150"/>
-      <img src="src\assets\images\books\manufacturing_consent.jpg"  width="150"/>
+      <img src="\src\assets\images\books\neuromancer.jpg"  width="150"/>
+      <img src="\src\assets\images\books\1984.jpg"  width="150"/>
+      <img src="\src\assets\images\books\change_your_mind.jpg"  width="150"/>
+      <img src="\src\assets\images\books\dune_1.jpg"  width="150"/>
+      <img src="\src\assets\images\books\mind_on_plants.jpg"  width="150"/>
+      <img src="\src\assets\images\books\richdad.jpg"  width="150"/>
+      <img src="\src\assets\images\books\fahrenheit.jpg"  width="150"/>
+      <img src="\src\assets\images\books\dune_2.jpg"  width="150"/>
+      <img src="\src\assets\images\books\manufacturing_consent.jpg"  width="150"/>
       <div class="caption">
       </div>
     </div>
