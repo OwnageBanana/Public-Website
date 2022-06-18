@@ -54,18 +54,19 @@ import { ref } from 'vue'
     <h1>
       What I'm Reading
     </h1>
-    <div class="reading-list">
-      <img src="\src\assets\images\books\neuromancer.jpg"  width="150"/>
-      <img src="\src\assets\images\books\1984.jpg"  width="150"/>
-      <img src="\src\assets\images\books\change_your_mind.jpg"  width="150"/>
-      <img src="\src\assets\images\books\dune_1.jpg"  width="150"/>
-      <img src="\src\assets\images\books\mind_on_plants.jpg"  width="150"/>
-      <img src="\src\assets\images\books\richdad.jpg"  width="150"/>
-      <img src="\src\assets\images\books\fahrenheit.jpg"  width="150"/>
-      <img src="\src\assets\images\books\dune_2.jpg"  width="150"/>
-      <img src="\src\assets\images\books\manufacturing_consent.jpg"  width="150"/>
-      <div class="caption">
-      </div>
+      <div class="reading-list">
+        <img src="\src\assets\images\books\neuromancer.jpg"  width="150"/>
+        <img src="\src\assets\images\books\1984.jpg"  width="150"/>
+        <img src="\src\assets\images\books\change_your_mind.jpg"  width="150"/>
+        <img src="\src\assets\images\books\dune_1.jpg"  width="150"/>
+        <img src="\src\assets\images\books\mind_on_plants.jpg"  width="150"/>
+        <img src="\src\assets\images\books\richdad.jpg"  width="150"/>
+        <img src="\src\assets\images\books\fahrenheit.jpg"  width="150"/>
+        <img src="\src\assets\images\books\dune_2.jpg"  width="150"/>
+        <img src="\src\assets\images\books\manufacturing_consent.jpg"  width="150"/>
+
+        <div class="caption">
+        </div>
     </div>
   </div>
 </template>
@@ -88,13 +89,15 @@ import { ref } from 'vue'
 .article-stub-body {
   display: flex;
   text-align: justify;
-  min-height:9.375rem;
+  min-height: 9.375rem;
 }
 .reverse-flow .article-stub-body {
   flex-direction: row-reverse;
 }
 .article-stub-body img {
   margin: 0px 12px;
+  min-width: 150px;
+  height: fit-content;
   border-radius: 0.1875rem;
   border-color: var(--main-darker);
 }
@@ -105,8 +108,8 @@ import { ref } from 'vue'
   /* display:flex; */
   /* overflow:hidden; */
   margin: 1rem auto;
-
 }
+
 /* .article-stub h1::before {
   content: "";
   position: absolute;

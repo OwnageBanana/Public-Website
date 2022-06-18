@@ -100,8 +100,13 @@ html.dark .header::before {
   color: var(--main-lighter);
   display: flex;
   flex-wrap: wrap;
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   margin-right: 1rem;
+}
+@media (min-width: 640px) {
+  .heading {
+    padding-left: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -152,7 +157,7 @@ nav a {
 }
 @media (min-width: 1024px) {
   nav {
-    padding-left:0rem;
+    padding-left: 0rem;
   }
 }
 /* styles to show sun and moon based on themes */

@@ -81,6 +81,7 @@ let scrollToTop = () => {
 }
 .icon-container > svg {
   margin: auto;
+  padding-top:0.125rem;
   width: 1.5rem;
 }
 @media (min-width: 1024px) {
