@@ -4,3 +4,5 @@ build with `yarn dev`
 build with `yarn build`
 
 This repository holds the basic code for my personal website.
+
+Currently a WIP.
