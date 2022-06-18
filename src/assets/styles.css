@@ -1,5 +1,6 @@
 @import url("/src/assets/modules/themes.module.css");
 @import url("/src/assets/modules/icons.module.css");
+@import url("/src/assets/modules/fonts.module.css");
 
 /* styles.css contains the majority of the styling needed for the base site that is used on every page */
 * {
@@ -16,8 +17,9 @@
 
 html {
   font-size:16px;
-  /*  'IBM Plex Mono', monospace,  */
-  font-family: 'Consolas', 'Courier New', monospace;
+  font-weight: normal;
+  font-family: 'IBM Plex Mono';
+  /* , monospace, 'Consolas', 'Courier New', monospace; */
   color: var(--main-darker);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

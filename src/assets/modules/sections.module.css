@@ -1,8 +1,7 @@
 
-/* intended to be put on a heading tag of a section for taking styling of the heading tag
- but removing margins */
 .section-heading {
-  margin:0;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 .section-button {
@@ -30,18 +29,19 @@
 .section-button::after {
   content: " +";
 }
-.section-heading-active .section-button::after {
+.section-heading.active .section-button::after {
   content: " -";
 }
 .section {
-   /* 0.5s linear; */
+  transition: max-height 0.15s linear;
   height:inherit;
-  overflow-y: hidden;
+  /* overflow-y: scroll; */
+  max-height: 500px;
 }
 
 .section.hidden-section {
-  height:0;
-  /* display:none; */
+  max-height:0;
+  overflow-y: hidden;
 }
 
 /*

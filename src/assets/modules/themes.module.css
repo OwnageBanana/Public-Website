@@ -36,15 +36,17 @@
   --complement-light: #bfceb3;
   --complement-lighter: #F8F9F6;
 }
-/* } */
+/* the names in the dark theme are really going to represent to oposite of what they say,
+like main-darker is the lightest color. but this lets me not have to write dark css for everything and makes
+inverting easy */
 :root.dark {
   --main-darker: #fffdfb;
   /* #121216; */
   --main-dark:#FFEDE1;
   /* //#313548; */
   --main:#425096;
-  --main-light: #bfd6dd;
-  --main-lighter: #E7EDEF;
+  --main-light: #313548;;
+  --main-lighter: #121216;
 
   --contrast-darker: #823b0b;
   --contrast-dark: #c47038;

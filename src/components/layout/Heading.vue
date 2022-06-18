@@ -38,9 +38,10 @@ const themeChange = function () {
 
         <nav>
           <router-link to="/">Home</router-link>
-          <router-link to="/about">About</router-link>
           <router-link to="/projects">Projects</router-link>
           <router-link to="/showcase">Showcase</router-link>
+          <router-link to="/blog">Blog</router-link>
+          <router-link to="/about">About</router-link>
         </nav>
         <div class="theme-icon">
           <a @click="themeChange" >
@@ -88,10 +89,10 @@ html.dark .header {
 html.dark .header::before {
   background: linear-gradient(270deg, var(--complement-bright) 0%, var(--complement) 50%, var(--contrast) 100%);
 }
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .container {
-    width:1024px;
-    margin:auto;
+    width: 1024px;
+    margin: auto;
   }
 }
 
@@ -99,8 +100,14 @@ html.dark .header::before {
   color: var(--main-lighter);
   display: flex;
   flex-wrap: wrap;
-  padding-left: 1rem;
+  padding-left: 2rem;
   margin-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    padding-left: 0rem;
+  }
 }
 .heading h1 {
   color: var(--main-lighter);
@@ -112,7 +119,12 @@ html.dark .header::before {
   margin: auto 0 0.5rem 0;
   white-space: nowrap;
 }
-
+html.dark .heading h1 {
+  color: var(--main-darker);
+}
+html.dark .heading-subtext {
+  color: var(--main-darker);
+}
 .nav-container {
   display: flex;
 }
@@ -138,7 +150,11 @@ nav a {
     padding: 0 1rem;
   }
 }
-
+@media (min-width: 1024px) {
+  nav {
+    padding-left:0rem;
+  }
+}
 /* styles to show sun and moon based on themes */
 .theme-icon {
   margin: auto 1rem auto 0;
