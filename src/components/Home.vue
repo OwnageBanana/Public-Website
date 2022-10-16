@@ -97,9 +97,15 @@ const nav = function (path) {
 .article-stub {
   display: flex;
   flex-direction: column;
-  width: 66%;
+  width: 100%;
   position: relative;
 }
+@media (min-width:768px ) {
+  .article-stub {
+    width: 66%;
+  }
+}
+
 .article-stub-body {
   display: flex;
   text-align: justify;
