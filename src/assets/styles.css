@@ -90,10 +90,18 @@ dd::before {
 /* anchor element */
 a {
   color: var(--complement-bright);
+  cursor:pointer;
 }
 
 a:hover {
   color: var(--complement-light);
+}
+
+a.invisible {
+  color: inherit;
+}
+a.invisible:hover {
+  color: inherit;
 }
 
 /* active link */
@@ -107,6 +115,9 @@ a.router-link-active:hover {
 /*anchor element: dark */
 html.dark a:hover {
   color: var(--complement);
+}
+html.dark a.invisible:hover {
+  color: inherit;
 }
 html.dark a.router-link-active:hover {
   color: var(--contrast);

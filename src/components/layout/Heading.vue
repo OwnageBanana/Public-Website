@@ -5,15 +5,15 @@
 import { computed } from '@vue/reactivity'
 import { useRouter, useRoute } from 'vue-router'
 
-const router = useRouter()
 const route = useRoute()
+const router = useRouter()
 
 defineProps({
   msg: String
 })
 
 const nav = function (path) {
-  router.push('home')
+  router.push(path)
 };
 const themeChange = function () {
   document.documentElement.classList.toggle('dark')
@@ -31,7 +31,7 @@ const themeChange = function () {
   <div class="header">
     <div class="container">
       <div class="heading">
-        <h1 @click="nav('home')"> Adam Mills </h1>
+        <h1> <a class="invisible" @click="nav('/home')">Adam Mills</a> </h1>
         <span class="heading-subtext">Software Engineer</span>
       </div>
       <div class="nav-container">

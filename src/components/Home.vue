@@ -1,6 +1,12 @@
 <script setup>
 import { ref } from 'vue'
 
+import { useRouter, useRoute } from 'vue-router'
+// const route = useRoute()
+const router = useRouter()
+const nav = function (path) {
+  router.push(path)
+};
 </script>
 
 <template>
@@ -24,29 +30,33 @@ import { ref } from 'vue'
       Recent Articles
     </h1>
     <!-- top x number of blogs -->
-    <div class="flow">
-      <div class="article-stub">
-        <h2>
-          At-Home Pi Server
-        </h2>
-        <div class="article-stub-body">
-          <img src="\src\assets\images\pi_on_floor_small.jpg" alt="image of a raspberry pi on my dirty floor"  width="150" />
-          Building a Pi server from the ground up has been a lot of things, primarily its been a bad decision!
+    <a class="invisible" @click="nav('/blog/1')">
+      <div class="flow">
+        <div class="article-stub">
+          <h2>
+            At-Home Pi Server
+          </h2>
+          <div class="article-stub-body">
+            <img src="\src\assets\images\pi_on_floor_small.jpg" alt="image of a raspberry pi on my dirty floor"  width="150" />
+            Building a Pi server from the ground up has been a lot of things, primarily its been a bad decision!
+          </div>
         </div>
       </div>
-    </div>
-    <div class="reverse-flow">
-      <div class="article-stub">
-        <h2>
-          Building a keyboard
-        </h2>
-        <div class="article-stub-body">
-          <img src="\src\assets\images\3d_printed_pcb_small.jpg" alt="Image of a 3d printed pcb" width="150"/>
-          A project for the ages, vastly underestimated, poorly planed and awfully timed during a chip shortage
-          but glory is found on the hard-fought path and keyboard clack waits for no man!
+    </a>
+    <a class="invisible"  @click="nav('/blog/2')">
+      <div class="reverse-flow">
+        <div class="article-stub">
+          <h2>
+            Building a Keyboard
+          </h2>
+          <div class="article-stub-body">
+            <img src="\src\assets\images\3d_printed_pcb_small.jpg" alt="Image of a 3d printed pcb" width="150"/>
+            A project for the ages, vastly underestimated, poorly planed and awfully timed during a chip shortage
+            but glory is found on the hard-fought path and keyboard clack waits for no man!
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   </div>
   <!-- technical articles -->
   <!-- books -->
@@ -55,15 +65,19 @@ import { ref } from 'vue'
       What I'm Reading
     </h1>
       <div class="reading-list">
-        <img src="\src\assets\images\books\neuromancer.jpg"  width="150"/>
-        <img src="\src\assets\images\books\1984.jpg"  width="150"/>
-        <img src="\src\assets\images\books\change_your_mind.jpg"  width="150"/>
-        <img src="\src\assets\images\books\dune_1.jpg"  width="150"/>
-        <img src="\src\assets\images\books\mind_on_plants.jpg"  width="150"/>
-        <img src="\src\assets\images\books\richdad.jpg"  width="150"/>
-        <img src="\src\assets\images\books\fahrenheit.jpg"  width="150"/>
-        <img src="\src\assets\images\books\dune_2.jpg"  width="150"/>
-        <img src="\src\assets\images\books\manufacturing_consent.jpg"  width="150"/>
+        <img src="\src\assets\images\books\neuromancer.jpg"           height="220"/>
+        <img src="\src\assets\images\books\1984.jpg"                  height="220"/>
+        <img src="\src\assets\images\books\change_your_mind.jpg"      height="220"/>
+        <img src="\src\assets\images\books\dune_1.jpg"                height="220"/>
+        <img src="\src\assets\images\books\mind_on_plants.jpg"        height="220"/>
+        <img src="\src\assets\images\books\richdad.jpg"               height="220"/>
+        <img src="\src\assets\images\books\fahrenheit.jpg"            height="220"/>
+        <img src="\src\assets\images\books\dune_2.jpg"                height="220"/>
+        <img src="\src\assets\images\books\manufacturing_consent.jpg" height="220"/>
+        <img src="\src\assets\images\books\three_body_problem.jpg"    height="220"/>
+        <img src="\src\assets\images\books\eversion.jpg"              height="220"/>
+        <img src="\src\assets\images\books\learning_AoE.jpg"          height="220"/>
+        <img src="\src\assets\images\books\locke.jpg"                 height="220"/>
 
         <div class="caption">
         </div>

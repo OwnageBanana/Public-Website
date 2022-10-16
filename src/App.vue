@@ -84,7 +84,7 @@ let scrollToTop = () => {
   padding-top:0.125rem;
   width: 1.5rem;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .scroll-top-button {
     width: 4rem;
     height: 4rem;
