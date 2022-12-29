@@ -37,7 +37,7 @@ const nav = function (path) {
             At-Home Pi Server
           </h2>
           <div class="article-stub-body">
-            <img src="\src\assets\images\pi_on_floor_small.jpg" alt="image of a raspberry pi on my dirty floor"  width="150" />
+            <img src="/src/assets/images/pi_on_floor_small.jpg" alt="image of a raspberry pi on my dirty floor"  width="150" />
             Building a Pi server from the ground up has been a lot of things, primarily its been a bad decision!
           </div>
         </div>
@@ -50,7 +50,7 @@ const nav = function (path) {
             Building a Keyboard
           </h2>
           <div class="article-stub-body">
-            <img src="\src\assets\images\3d_printed_pcb_small.jpg" alt="Image of a 3d printed pcb" width="150"/>
+            <img src="/src/assets/images/3d_printed_pcb_small.jpg" alt="Image of a 3d printed pcb" width="150"/>
             A project for the ages, vastly underestimated, poorly planed and awfully timed during a chip shortage
             but glory is found on the hard-fought path and keyboard clack waits for no man!
           </div>
@@ -65,19 +65,19 @@ const nav = function (path) {
       What I'm Reading
     </h1>
       <div class="reading-list">
-        <img src="\src\assets\images\books\neuromancer.jpg"           height="220"/>
-        <img src="\src\assets\images\books\1984.jpg"                  height="220"/>
-        <img src="\src\assets\images\books\change_your_mind.jpg"      height="220"/>
-        <img src="\src\assets\images\books\dune_1.jpg"                height="220"/>
-        <img src="\src\assets\images\books\mind_on_plants.jpg"        height="220"/>
-        <img src="\src\assets\images\books\richdad.jpg"               height="220"/>
-        <img src="\src\assets\images\books\fahrenheit.jpg"            height="220"/>
-        <img src="\src\assets\images\books\dune_2.jpg"                height="220"/>
-        <img src="\src\assets\images\books\manufacturing_consent.jpg" height="220"/>
-        <img src="\src\assets\images\books\three_body_problem.jpg"    height="220"/>
-        <img src="\src\assets\images\books\eversion.jpg"              height="220"/>
-        <img src="\src\assets\images\books\learning_AoE.jpg"          height="220"/>
-        <img src="\src\assets\images\books\locke.jpg"                 height="220"/>
+        <img src="/src/assets/images/books/neuromancer.jpg"           height="220"/>
+        <img src="/src/assets/images/books/1984.jpg"                  height="220"/>
+        <img src="/src/assets/images/books/change_your_mind.jpg"      height="220"/>
+        <img src="/src/assets/images/books/dune_1.jpg"                height="220"/>
+        <img src="/src/assets/images/books/mind_on_plants.jpg"        height="220"/>
+        <img src="/src/assets/images/books/richdad.jpg"               height="220"/>
+        <img src="/src/assets/images/books/fahrenheit.jpg"            height="220"/>
+        <img src="/src/assets/images/books/dune_2.jpg"                height="220"/>
+        <img src="/src/assets/images/books/manufacturing_consent.jpg" height="220"/>
+        <img src="/src/assets/images/books/three_body_problem.jpg"    height="220"/>
+        <img src="/src/assets/images/books/eversion.jpg"              height="220"/>
+        <img src="/src/assets/images/books/learning_AoE.jpg"          height="220"/>
+        <img src="/src/assets/images/books/locke.jpg"                 height="220"/>
 
         <div class="caption">
         </div>
@@ -100,7 +100,7 @@ const nav = function (path) {
   width: 100%;
   position: relative;
 }
-@media (min-width:768px ) {
+@media (min-width:768px) {
   .article-stub {
     width: 66%;
   }

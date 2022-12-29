@@ -1,6 +1,6 @@
-@import url("/src/assets/modules/themes.module.css");
-@import url("/src/assets/modules/icons.module.css");
-@import url("/src/assets/modules/fonts.module.css");
+@import url("@assets/modules/themes.module.css");
+@import url("@assets/modules/icons.module.css");
+@import url("@assets/modules/fonts.module.css");
 
 /* styles.css contains the majority of the styling needed for the base site that is used on every page */
 * {

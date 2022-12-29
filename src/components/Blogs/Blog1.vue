@@ -311,7 +311,7 @@ ff02::2         ip6-allrouters
   <p>
   And thats it! you should have a good working knowledge of how your server is hosting files, serving your documents, routing traffic and managing DNS! you should have a domain configured and SSL certs. I know this wasn't an all encompassing and comprehensive guide, and you may find some issues. I'd like to help you debug if so get in contact and we can learn together.
   </p>
-  <img style="margin-bottom:2rem;" src="\src\assets\images\pi_on_floor_small.jpg" alt="image of a raspberry pi on my dirty floor" />
+  <img style="margin-bottom:2rem;" src="@assets/images/pi_on_floor_small.jpg" alt="image of a raspberry pi on my dirty floor" />
 
 </template>
 

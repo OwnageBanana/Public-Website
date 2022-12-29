@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-
+import { fileURLToPath, URL } from 'url';
 
 
 const config = defineConfig({
@@ -8,16 +8,16 @@ const config = defineConfig({
   resolve:{
     alias:[{
       find:"@",
-      replacement:"/src/",
+      replacement: fileURLToPath(new URL('./src', import.meta.url)),
     },{
       find:"@components",
-      replacement:"/src/components",
+      replacement:fileURLToPath(new URL('./src/components', import.meta.url)),
     },{
       find:"@assets",
-      replacement:"/src/assets",
+      replacement:fileURLToPath(new URL('./src/assets', import.meta.url))
     },{
       find:"@layout",
-      replacement:"/src/components/layout",
+      replacement:fileURLToPath(new URL('./src/components/layout', import.meta.url))
     },]
   },
 });
