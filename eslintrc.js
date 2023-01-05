@@ -4,11 +4,13 @@ export default {
     node: true
   },
   extends: [
+    "@antfu",
     // 'plugin:vue/essential',
     // 'plugin:vue/strongly-recommended',
     // 'plugin:vue/recommended'
     // 'eslint:recommended'
   ],
+  parser: "vue-eslint-parser",
   parserOptions: {
     parser: 'babel-eslint',
     "ecmaFeatures": {

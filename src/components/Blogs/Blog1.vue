@@ -99,7 +99,7 @@
   </code>
 
   <p>
-  check to see if the installation is working by going to your pi's private IP in your browser and you'll get a <code>Welcome to nginx!</code> message. Mine is 192.168.2.22. you can find it with <code>ifconfig</code>, it should be configured to the DCHP range of your router which is typically in 192.168.0.0/24, 192.168.1.0/24 or 192.168.2.0/24. We'll actually configure the DHCP server later to allocate a static IP for the pi.
+  check to see if the installation is working by going to your pi's private IP in your browser and you'll get a <code>Welcome to nginx!</code> message. Mine is 192.168.2.22. you can find it with <code>ifconfig</code>, it should be configured to the DCHP range of your router which is typically in 192.168.0.0/24, 192.168.1.0/24 or 192.168.2.0/24. We'll actually configure the DHCP server later to allocate a static IP for the pi. Your router's admin panel should also have this information easily accessible too.
   </p>
 
   <code>
@@ -109,11 +109,11 @@
   <h2> SSL and Certbot</h2>
 
   <p>
-  I'm going to keep this section brief, thats because one of the most beloved free services online, Lets Encrypt, has done a great job of creating documentation and has a great utility tool that keeps your certs fresh and frisky.
+  I'm going to keep this section brief, and thats because one of the most beloved free services online, Lets Encrypt, has done a great job of creating documentation and has a great utility tool that keeps your certs fresh and frisky.
   </p>
 
   <p>
-  TLDR:<a href="https://certbot.eff.org/instructions?ws=nginx&os=debianbuster" target="none">instructions to using certbot on Debian 10 Buster</a> (Raspian's parent distro)
+  <strong> TLDR:<a href="https://certbot.eff.org/instructions?ws=nginx&os=debianbuster" target="none">instructions to using certbot on Debian 10 Buster</a> (Raspian's parent distro)</strong>
   </p>
 
   <p>
@@ -133,7 +133,7 @@
   </p>
 
   <p>
-  wildcard certs are a step too far for my guide here, they let you get SSL certs automatically for subdomains like a <code>foo.domain.com</code> or <code>bar.domain.com</code>.
+  wildcard certs are a step too far for this guide. In summary, they let you get SSL certs automatically for subdomains like a <code>foo.domain.com</code> or <code>bar.domain.com</code>.
   </p>
 
   <p>

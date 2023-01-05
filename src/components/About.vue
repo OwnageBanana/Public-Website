@@ -61,7 +61,29 @@ let sectionSelection = ref("tech");
             <dt><code>Azure and Google Cloud</code> are my most used cloud platforms. </dt>
             <dt><code>Gitlab and Azure Devops</code> for all things Devops. </dt>
             <dt><code>Docker</code> for all my containerization needs. </dt>
-            <dt><code>Debian and Ubuntu</code> are my favorite Linux distributions.</dt>
+            <dt><code>Debian, Ubuntu and Fedora</code> are my favorite Linux distributions.</dt>
+            <dd>I daily drive <code>Fedora and Windows</code> at the moment.</dd>
+          </dl>
+        </div>
+        <span :class="['section-heading', sectionSelection === 'interests'? 'active' :'']">
+          <button :class="'section-button'" @click="sectionSelection = sectionSelection === 'interests'? '': 'interests'">
+            My Interests Are
+          </button>
+        </span>
+        <div :class="['section', sectionSelection !== 'interests'? 'hidden-section':'']" >
+          <dl>
+            <dt><code>Software Development.</code></dt>
+            <dd>Web apps, design, UX.</dd>
+            <dd>Server code, operational systems development.</dd>
+            <dd>Embedded, IoT, automation.</dd>
+            <dt><code>Hardware design</code></dt>
+            <dd>Embedded systems.</dd>
+            <dd>Circuit design.</dd>
+            <dd>PCB design.</dd>
+            <dt>Bouldering indoors and outdoors.</dt>
+            <dt>Hiking and mushroom foraging.</dt>
+            <dt>Playing guitar.</dt>
+            <dt>Reading and journaling.</dt>
           </dl>
         </div>
         <span :class="['section-heading', sectionSelection === 'tools'? 'active' :'']">
@@ -71,30 +93,12 @@ let sectionSelection = ref("tech");
         </span>
         <div :class="['section', sectionSelection !== 'tools'? 'hidden-section':'']" >
           <dl>
-            <dt>VS Code is my IDE of choice. </dt>
-            <dd>Go see my <router-link to="/blog?article=vs-code">favorite extensions!</router-link></dd>
-            <dt>Google Workspace for professional documentation tools</dt>
-            <dt>Google Workspace for professional documentation tools</dt>
-          </dl>
-        </div>
-        <span :class="['section-heading', sectionSelection === 'interests'? 'active' :'']">
-          <button :class="'section-button'" @click="sectionSelection = sectionSelection ==='interests'? '': 'interests'">
-            My Interests Are
-          </button>
-        </span>
-        <div :class="['section', sectionSelection !== 'interests'? 'hidden-section':'']" >
-          <dl>
-            <dt><strong>Software development.</strong></dt>
-            <dd>Web apps, design, UX.</dd>
-            <dd>Server code, operational systems development.</dd>
-            <dd>Imbedded code, IoT, automation.</dd>
-            <dt><strong>Hardware design</strong></dt>
-            <dd>Embedded systems.</dd>
-            <dd>Circuit design.</dd>
-            <dd>PCB design.</dd>
-            <dt>Bouldering indoors and out.</dt>
-            <dt>Hiking and mushroom foraging.</dt>
-            <dt>Playing guitar.</dt>
+            <dt>VSCode is my IDE of choice. </dt>
+            <!-- <dd>Go see my <router-link to="/blog?article=vs-code">favorite extensions!</router-link></dd> -->
+            <dd>I try to keep my settings.json up-to-date and on <a href="https://github.com/OwnageBanana/Trove" target="none">GitHub, too!</a> </dd>
+            <!-- <dt>Google Workspace for professional documentation tools</dt> -->
+            <!-- <dt>Google Workspace for professional documentation tools</dt> -->
+            <!-- <dt>Postman</dt> -->
           </dl>
         </div>
       </div>
@@ -145,5 +149,6 @@ html.dark .pfp {
 
 .list-container {
   margin-bottom: 2rem;
+  min-height:26rem;
 }
 </style>
