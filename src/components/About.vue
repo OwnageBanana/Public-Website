@@ -27,16 +27,14 @@ let sectionSelection = ref("tech");
       <p>
         I am always seeking better approaches to problem solving and how teams of developers can work together effectively. <strong>I am constantly revising</strong>
         my SDL to find improvements, pruning the inefficient processes. <strong> I am honest</strong> and open about when something is not working,
-        I am not afraid to put in the effort to build excellent teams and help others build on themselves, because I believe this is the root
+        I am not afraid to put in the effort to build excellent teams and help others build on themselves, because I believe this makes everyone's life better and is the route
         to building great products.
       </p>
-      <q>forget about your targets, lets focus on our systems.</q>
-      <br/>
-      <cite> - James Clear, Atomic habits</cite>
+
       <dl>
         <dt><strong>Software Engineer for {{yearsInIndustry}}+ years</strong>, the majority of my professional experience involves <strong>full-stack development.</strong></dt>
         <dt><strong>Bachelor's degree in computer science</strong> from Dalhousie University + co-op program.</dt>
-        <dt>Worked building internal web-servers/websites, internal business analytics software, business operations tools, product websites.</dt>
+        <dt>I've built internal reporting web-servers/websites, internal business analytics software, business operations tools, product websites.</dt>
       </dl>
       <!-- <h3>Summary of Products I've built:</h3>
       <dl>
