@@ -32,7 +32,7 @@ let sectionSelection = ref("tech");
       </p>
 
       <dl>
-        <dt><strong>Software Engineer for {{yearsInIndustry}}+ years</strong>, the majority of my professional experience involves <strong>full-stack development.</strong></dt>
+        <dt><strong>Software Developer for {{yearsInIndustry}}+ years</strong>, the majority of my professional experience involves <strong>full-stack development.</strong></dt>
         <dt><strong>Bachelor's degree in computer science</strong> from Dalhousie University + co-op program.</dt>
         <dt>I've built internal reporting web-servers/websites, internal business analytics software, business operations tools, product websites.</dt>
       </dl>
