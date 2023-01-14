@@ -23,7 +23,11 @@ let scrollToTop = () => {
    <Transition name="fade">
       <button id="return-to-top" class="scroll-top-button" v-if="scrollY > 258" @click="scrollToTop">
         <div class="icon-container">
-          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M5,9l1.41,1.41L11,5.83V22H13V5.83l4.59,4.59L19,9l-7-7L5,9z"/></svg>
+          <div style="display:block; margin:auto;">
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+              <rect fill="none" height="24" width="24"/><path d="M5,9l1.41,1.41L11,5.83V22H13V5.83l4.59,4.59L19,9l-7-7L5,9z"/>
+            </svg>
+      </div>
         </div>
       </button>
     </Transition>
@@ -79,25 +83,50 @@ let scrollToTop = () => {
 .icon-container {
   margin: auto;
 }
-.icon-container > svg {
-  margin: auto;
-  padding-top:0.125rem;
+.icon-container svg {
   width: 1.5rem;
+}
+@media (min-width: 640px) {
+  .scroll-top-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 3rem;
+    right: 5%;
+  }
+  .icon-container svg {
+    width: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .scroll-top-button {
+    width: 3rem;
+    height: 3rem;
+    bottom: 4rem;
+    right: 5%;
+  }
+  .icon-container svg {
+    width: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .scroll-top-button {
+    right: 5%;
+  }
 }
 @media (min-width: 1440px) {
   .scroll-top-button {
-    width: 4rem;
-    height: 4rem;
-    bottom: 2.5rem;
-    right: 15%;
+    width: 3.5rem;
+    height: 3.5rem;
+    bottom: 4rem;
+    right: 10%;
   }
-  .icon-container > svg {
+  .icon-container svg {
     width: 2rem;
   }
 }
 @media (min-width: 2000px) {
   .scroll-top-button {
-    bottom: 3rem;
+    bottom: 4rem;
     right: 20%;
   }
 }

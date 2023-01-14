@@ -48,8 +48,8 @@
             <li> Soldered the IO expanders backwards.</li>
             <li>swapped VDD and VSS so the boards are totally garbage.</li>
         </ol>
-          but for the sake of saving money and not invoking a globally distributed network of manufacturing and shipping infrastructure to have new boards shipped to me because I put the silly little lines no the wrong end of my little not-for-eating chips, I cut the traces, lifted pins and put bodge wire across to the correct connections  </p>
-        <p> after that debacle of wasting chips, I found that I had only 1.65 volts on the left half, compared to the 3.3 on the right. So something went awry, whether I didn't join the CC pins that I can 3.3V through did it or theres some other thing, I still don't know. but by adding a 3.3V linear regulator driven from the 5V line I was able to get everything working! </p>
+          but for the sake of saving money and to not invoking a globally distributed network of manufacturing/shipping infrastructure to have new boards shipped to me, all because I put the silly little copper lines on the wrong end of my not-for-eatin' chips, I cut the traces, lifted pins and put bodge wire across to the correct connections.  </p>
+        <p> after that debacle of wasting chips, I found that I had only 1.65V on the left half, compared to the 3.3V on the right. So something went awry, whether I didn't join the CC pins of the USB-C that I ran 3.3V through did it or theres some other thing, I still don't know. but by adding a 3.3V linear regulator driven from the 5V line that is on the left half I was able to get everything working! </p>
       </div>
     </div>
   </div>

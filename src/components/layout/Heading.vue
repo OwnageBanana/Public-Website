@@ -32,15 +32,15 @@ const themeChange = function () {
     <div class="container">
       <div class="heading">
         <h1> <a class="invisible" @click="nav('/home')">Adam Mills</a> </h1>
-        <span class="heading-subtext">Software Engineer</span>
+        <span class="heading-subtext">Software Developer</span>
       </div>
       <div class="nav-container">
 
         <nav>
           <router-link to="/">Home</router-link>
           <router-link to="/projects">Projects</router-link>
-          <router-link to="/showcase">Showcase</router-link>
-          <router-link to="/blog">Blog</router-link>
+          <!-- <router-link to="/showcase">Showcase</router-link> -->
+          <!-- <router-link to="/blog">Blog</router-link> -->
           <router-link to="/about">About</router-link>
         </nav>
         <div class="theme-icon">
@@ -121,7 +121,7 @@ html.dark .header::before {
 .heading-subtext {
   /* opacity: 0.75; */
   color: var(--main-light);
-  margin: auto 0 0.5rem 0;
+  margin: auto 0 0.25rem 0;
   white-space: nowrap;
 }
 html.dark .heading h1 {

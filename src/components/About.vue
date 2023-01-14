@@ -19,7 +19,7 @@ let sectionSelection = ref("tech");
       </div>
       <h3>About Me:</h3>
       <p>
-        As a Software Engineer <strong> I take pride in the quality of my work</strong>, I enjoy taking with digital tools to build
+        As a Software Developer <strong> I take pride in the quality of my work</strong>, I enjoy taking with digital tools to build
         meaningful products, solving interesting problems; I'm dedicated to making <strong> software that brings joy. </strong> I am and endlessly
         inquisitive person who need to know how things work, I am always building on my knowledge through studying, tinkering on my own
         projects, and connecting with other's and their projects.
