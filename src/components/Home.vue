@@ -78,7 +78,8 @@ const nav = function (path) {
         <img src="/src/assets/images/books/eversion.jpg"              height="220"/>
         <img src="/src/assets/images/books/learning_AoE.jpg"          height="220"/>
         <img src="/src/assets/images/books/locke.jpg"                 height="220"/>
-
+        <img src="/src/assets/images/books/hear_the_wind_sing.jpg"    height="220"/>
+        <img src="/src/assets/images/books/pinball.jpg"               height="220"/>
         <div class="caption">
         </div>
     </div>
