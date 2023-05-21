@@ -26,4 +26,7 @@ let blogId = ref(route.params.id?? 1);
 </template>
 
 <style scoped>
+h1 {
+  margin-top: 0px;
+}
 </style>

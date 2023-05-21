@@ -40,6 +40,9 @@ let sectionSelection = ref("tech");
         <dt><strong>Bachelor's degree in computer science</strong> from Dalhousie University + co-op program.</dt>
         <dt>I've built internal reporting web-servers/websites, internal business analytics software, business operations tools, product websites.</dt>
       </dl>
+      <p>
+        <strong>If you'd like to get in contact with me:</strong> adam [at] adammills [dot] dev
+      </p>
       <!-- <h3>Summary of Products I've built:</h3>
       <dl>
         <dt>internal websites, application development, databases.</dt>
@@ -108,6 +111,7 @@ let sectionSelection = ref("tech");
           </dl>
         </div>
       </div>
+
     </div>
   </div>
 </template>

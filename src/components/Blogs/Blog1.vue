@@ -5,8 +5,8 @@
 
 
 <template>
-  <h1> At home Pi Server</h1>
-
+  <p style="margin-left:-0.5rem;"><code>.BLOG_PI_SERVER: </code></p>
+  <h1> At Home Pi Server</h1>
   <h2> introduction </h2>
   <p>
   Building a Pi server from the ground up has been a lot of things, primarily its been a bad decision!

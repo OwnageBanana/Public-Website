@@ -64,9 +64,11 @@ body {
 
 h1 {
   font-size:2rem;
+  margin: 0px;
 }
 
 p {
+  text-align: justify;
   margin:0.5rem 0;
 }
 /* @media(min-width: 1024px){
@@ -157,4 +159,8 @@ q {
 cite {
   display:block;
   padding-left:1rem;
+}
+
+pre {
+  overflow-x:auto;
 }

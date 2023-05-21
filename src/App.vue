@@ -39,7 +39,7 @@ let scrollToTop = () => {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  margin: 0 1.5rem;
+  margin: 0 0.5rem;
   /* text-align: justify; */
 }
 

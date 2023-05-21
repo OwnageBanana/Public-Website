@@ -30,7 +30,6 @@ const nav = function (path) {
       Recent Articles
     </h1>
     <!-- top x number of blogs -->
-    <RouterLink to="/projects/1" class="invisible" go>
       <div class="flow">
         <div class="article-stub">
           <h2>
@@ -38,12 +37,15 @@ const nav = function (path) {
           </h2>
           <div class="article-stub-body">
             <img src="/src/assets/images/pi_on_floor_small.jpg" alt="image of a raspberry pi on my dirty floor"  width="150" />
-            Building a Pi server from the ground up has been a lot of things, primarily its been a bad decision!
+            <span>Building a Pi server from the ground up has been a lot of things, primarily its been a bad decision!</span>
+            <br />
           </div>
+          <RouterLink to="/projects/1"  go>
+            jmp .BLOG_PI_SERVER
+          </RouterLink>
         </div>
       </div>
-    </RouterLink>
-    <RouterLink to="/projects/2" class="invisible" go>
+
       <div class="reverse-flow">
         <div class="article-stub">
           <h2>
@@ -51,12 +53,14 @@ const nav = function (path) {
           </h2>
           <div class="article-stub-body">
             <img src="/src/assets/images/3d_printed_pcb_small.jpg" alt="Image of a 3d printed pcb" width="150"/>
-            A project for the ages, vastly underestimated, poorly planed and awfully timed during a chip shortage
-            but glory is found on the hard-fought path and keyboard clack waits for no man!
+            <span>A project for the ages, vastly underestimated, poorly planed and awfully timed during a chip shortage
+            but glory is found on the hard-fought path and keyboard clack waits for no man!</span>
           </div>
+          <RouterLink to="/projects/2" go>
+            jmp .BLOG_WISE_CLACKER
+          </RouterLink>
         </div>
       </div>
-    </RouterLink>
   </div>
   <!-- technical articles -->
   <!-- books -->
@@ -99,19 +103,7 @@ const nav = function (path) {
   transition: background-color 0.2s ease-in-out;
   display: flex;
   flex-direction: row-reverse;
-  text-align: right;
 }
-
-.flow:hover,
-.reverse-flow:hover {
-  background-color: var(--contrast);
-}
-
-html.dark .flow:hover,
-html.dark .reverse-flow:hover {
-  background-color: var(--complement-dark);
-}
-
 
 .article-stub {
   display: flex;
@@ -129,17 +121,45 @@ html.dark .reverse-flow:hover {
   display: flex;
   text-align: justify;
   min-height: 9.375rem;
-}
-.reverse-flow .article-stub-body {
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 .article-stub-body img {
-  margin: 0px 12px;
+  margin:auto;
+  margin-bottom:0.5rem;
   min-width: 150px;
   height: fit-content;
   border-radius: 0.25rem;
   border: 4px solid var(--complement-bright);
 }
+@media (min-width:640px) {
+  .reverse-flow {
+    text-align: right;
+  }
+  .article-stub-body {
+    display: flex;
+    text-align: justify;
+    min-height: 9.375rem;
+  }
+  .flow .article-stub-body {
+    flex-direction: row;
+  }
+  .reverse-flow .article-stub-body {
+    flex-direction: row-reverse;
+  }
+  .article-stub-body img {
+    min-width: 150px;
+    height: fit-content;
+    border-radius: 0.25rem;
+    border: 4px solid var(--complement-bright);
+  }
+  .flow .article-stub-body img {
+    margin: 0 0.75rem 0 0;
+  }
+  .reverse-flow .article-stub-body img {
+    margin: 0 0 0 0.75rem;
+  }
+}
+
 .article-stub h2 {
   border-bottom: 0.1875rem solid var(--main-darker);
 }

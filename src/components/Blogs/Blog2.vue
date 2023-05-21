@@ -5,6 +5,7 @@
 
 
 <template>
+  <p style="margin-left:-0.5rem;"><code>.BLOG_WISE_CLACKER:</code> </p>
   <h1>Building a Keyboard</h1>
 
   <h2> Work in progress!</h2>
@@ -43,7 +44,7 @@
     <div class="mobile-col dev-log" style="display:flex; width:100%; background-color:var(--main-light)">
       <video src="@assets/videos/janky_linear_regulator.mp4" alt="" controls style="width:312px"/>
       <div>
-        <p > this video is me demoing a hack I made to get <code>rev 2</code> working. So I went through hell in this step, because I:
+        <p > this video is me demoing a hack I made to get <code>rev 2</code> working. I went through hell in this step, because I:
           <ol>
             <li> Soldered the IO expanders backwards.</li>
             <li>swapped VDD and VSS so the boards are totally garbage.</li>
