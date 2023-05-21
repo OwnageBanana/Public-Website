@@ -88,25 +88,43 @@ const nav = function (path) {
 
 <style scoped>
 .flow {
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
   display: flex;
 }
 .reverse-flow {
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
 }
+
+.flow:hover,
+.reverse-flow:hover {
+  background-color: var(--contrast);
+}
+
+html.dark .flow:hover,
+html.dark .reverse-flow:hover {
+  background-color: var(--complement-dark);
+}
+
+
 .article-stub {
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
 }
+
 @media (min-width:768px) {
   .article-stub {
     width: 66%;
   }
 }
-
 .article-stub-body {
   display: flex;
   text-align: justify;
@@ -119,8 +137,8 @@ const nav = function (path) {
   margin: 0px 12px;
   min-width: 150px;
   height: fit-content;
-  border-radius: 0.1875rem;
-  border-color: var(--main-darker);
+  border-radius: 0.25rem;
+  border: 4px solid var(--complement-bright);
 }
 .article-stub h2 {
   border-bottom: 0.1875rem solid var(--main-darker);
