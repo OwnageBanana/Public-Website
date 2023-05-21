@@ -6,6 +6,9 @@ function created () {
 
 const firstIndustryExperienceDate = new Date(2016, 5, 1);
 const yearsInIndustry = Math.ceil((new Date() - firstIndustryExperienceDate) / (1000 * 60 * 60 * 24 * 365));
+
+const firstDayProgramming = new Date(2008, 9, 1);
+const yearsProgramming = Math.ceil((new Date() - firstDayProgramming) / (1000 * 60 * 60 * 24 * 365));
 // using string matching because I need radio button like flow on selected sections
 let sectionSelection = ref("tech");
 
@@ -32,7 +35,8 @@ let sectionSelection = ref("tech");
       </p>
 
       <dl>
-        <dt><strong>Software Developer for {{yearsInIndustry}}+ years</strong>, the majority of my professional experience involves <strong>full-stack development.</strong></dt>
+        <dt><strong> {{yearsProgramming}}+ years</strong> programming in many capacities.</dt>
+        <dt><strong>Industry Software Developer for {{yearsInIndustry}}+ years</strong>, the majority of my professional experience involves <strong>full-stack development.</strong></dt>
         <dt><strong>Bachelor's degree in computer science</strong> from Dalhousie University + co-op program.</dt>
         <dt>I've built internal reporting web-servers/websites, internal business analytics software, business operations tools, product websites.</dt>
       </dl>
@@ -54,12 +58,13 @@ let sectionSelection = ref("tech");
             <dd>Occasionally sprinkled with <code>Tailwind + Sass</code> for CSS tools.</dd>
             <dt><code>Electron</code> for native desktop applications. </dt>
             <dt><code>Golang, C# .NET, Rust, Node.js</code> for server-side code.</dt>
-            <dt><code>MySQL, MSSQL, Postgresql</code> for relational databases. </dt>
-            <dt><code>Datastore, MongoDB</code> for non-relational databases. </dt>
+            <dt><code> Rust and C++</code> for systems,embedded programming.</dt>
+            <dt><code>MySQL, MSSQL, PostgreSQL</code> for relational databases. </dt>
+            <dt><code>Datastore</code> for non-relational databases. </dt>
             <dt><code>Azure and Google Cloud</code> are my most used cloud platforms. </dt>
             <dt><code>Gitlab and Azure Devops</code> for all things Devops. </dt>
             <dt><code>Docker</code> for all my containerization needs. </dt>
-            <dt><code>Debian, Ubuntu and Fedora</code> are my favorite Linux distributions.</dt>
+            <dt><code>Fedora, Debian, Ubuntu </code> are my favorite Linux distributions.</dt>
             <dd>I daily drive <code>Fedora and Windows</code> at the moment.</dd>
           </dl>
         </div>
@@ -74,7 +79,8 @@ let sectionSelection = ref("tech");
             <dd>Web apps, design, UX.</dd>
             <dd>Server code, operational systems development.</dd>
             <dd>Embedded, IoT, automation.</dd>
-            <dt><code>Hardware design</code></dt>
+            <dd></dd>
+            <dt><code>Hardware design.</code></dt>
             <dd>Embedded systems.</dd>
             <dd>Circuit design.</dd>
             <dd>PCB design.</dd>
@@ -91,9 +97,11 @@ let sectionSelection = ref("tech");
         </span>
         <div :class="['section', sectionSelection !== 'tools'? 'hidden-section':'']" >
           <dl>
-            <dt>VSCode is my IDE of choice. </dt>
+            <dt>VSCode is my IDE of choice.</dt>
             <!-- <dd>Go see my <router-link to="/blog?article=vs-code">favorite extensions!</router-link></dd> -->
-            <dd>I try to keep my settings.json up-to-date and on <a href="https://github.com/OwnageBanana/Trove" target="none">GitHub, too!</a> </dd>
+            <dt>Falling in love with Neovim. </dt>
+            <dd>I try to keep my settings.json and .config up-to-date and on <a href="https://github.com/OwnageBanana/Trove" target="none">GitHub, too!</a> </dd>
+
             <!-- <dt>Google Workspace for professional documentation tools</dt> -->
             <!-- <dt>Google Workspace for professional documentation tools</dt> -->
             <!-- <dt>Postman</dt> -->

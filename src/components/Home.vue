@@ -30,7 +30,7 @@ const nav = function (path) {
       Recent Articles
     </h1>
     <!-- top x number of blogs -->
-    <a class="invisible" @click="nav('/projects/1')">
+    <RouterLink to="/projects/1" class="invisible" go>
       <div class="flow">
         <div class="article-stub">
           <h2>
@@ -42,8 +42,8 @@ const nav = function (path) {
           </div>
         </div>
       </div>
-    </a>
-    <a class="invisible"  @click="nav('/projects/2')">
+    </RouterLink>
+    <RouterLink to="/projects/2" class="invisible" go>
       <div class="reverse-flow">
         <div class="article-stub">
           <h2>
@@ -56,7 +56,7 @@ const nav = function (path) {
           </div>
         </div>
       </div>
-    </a>
+    </RouterLink>
   </div>
   <!-- technical articles -->
   <!-- books -->

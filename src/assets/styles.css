@@ -104,6 +104,7 @@ a:hover {
 }
 a.invisible {
   color: inherit;
+  text-decoration: inherit;
 }
 a.invisible:hover {
   color: inherit;
@@ -125,6 +126,7 @@ html.dark a:hover {
 html.dark a.invisible:hover {
   color: inherit;
 }
+
 html.dark a.router-link-active:hover {
   color: var(--contrast);
 }

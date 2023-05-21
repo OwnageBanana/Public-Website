@@ -190,7 +190,7 @@
   <h2> Local DNS</h2>
 
   <p>
-  this will be the last piece of the puzzle to getting your website and domain working how you expect. I suspect you've tried it but on your wifi you won't be able to enter your domain to load your webserver. this is because of a NAT loopback. your DNS is resolving to your own ip, and your router tries to resolve this through DNS and creates a nasty infinity loop in the network of and unresolving domain for you. so fixing this means you'll need a LAN DNS that your router relies on to get the proper dns records so we can create a custom dns record to serve the LAN IP of your pi when requesting any of your domains.
+  this will be the last piece of the puzzle to getting your website and domain working how you expect. I suspect you've tried it but on your wifi you won't be able to enter your domain to load your webserver. this is because of a NAT loopback. your DNS is resolving to your own IP, and your router tries to resolve this through DNS and creates a nasty infinite loop in the network and unresolving domain for you. so fixing this means you'll need a LAN DNS that your router relies on to get the proper dns records so we can create a custom dns record to serve the LAN IP of your pi when requesting any of your domains.
   </p>
 
   <p>
@@ -202,7 +202,7 @@
   </code>
 
   <p>
-  from here you'll find your dnsmasq.conf file inside of your <code>/etc/</code> directory and you'll need to get a basic configuration going. I've listed mine below. A quick useful command to parse these sorts of files full of developer comments and just see what is actually being set is <code>grep -v '#' /etc/dnsmasq.conf | sed -r '/^\s*$/d'</code>.
+  from here you'll find your dnsmasq.conf file inside of your <code>/etc/</code> directory and you'll need to get a basic configuration going. I've listed mine below. Here is a quick useful command to parse your conf files full of developer comments to just see what is actually being set is <code>grep -v '#' /etc/dnsmasq.conf | sed -r '/^\s*$/d'</code>.
   </p>
 
   <p>
@@ -210,7 +210,7 @@
   </p>
 
   <p>
-  we are configuring a new DNS but we still want some real DNS's that have the WWW of domains so these lines set google's DNS as a fallback.
+  we are configuring a new DNS but we still want some real DNS's that have the rest of the domains so these lines set google's DNS as a fallback.
   </p>
 
   <code>
@@ -221,7 +221,7 @@ server=8.8.4.4
   </code>
 
   <p>
-  local lets us resolve LAN IPs we have configured domains for to look at the local.* domains before the WAN. these domains get configured in the etc/hosts file
+    local lets us resolve LAN IPs we have configured domains for to look at the .*\.local domains before the WAN. these domains get configured in the etc/hosts file
   </p>
 
   <code>
