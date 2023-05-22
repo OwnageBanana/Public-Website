@@ -20,7 +20,7 @@ let sectionSelection = ref("tech");
       <div class="pfp-container">
         <img class="pfp" src="@assets/images/pfp.jpg" height="208px" width="208px">
       </div>
-      <h3>About Me:</h3>
+      <h2>About Me:</h2>
       <p>
         As a Software Developer <strong> I take pride in the quality of my work</strong>, I enjoy taking with digital tools to build
         meaningful products, solving interesting problems; I'm dedicated to making <strong> software that brings joy. </strong> I am and endlessly
@@ -55,19 +55,19 @@ let sectionSelection = ref("tech");
           </button>
         </span>
         <div :class="['section', sectionSelection !== 'tech'? 'hidden-section':'']" >
-          <p>below is an incomplete list of software and languages I use, </p>
+          <p>below is an <strong>incomplete</strong> list of software and languages I use, I am just picking favorites! </p>
           <dl>
             <dt><code>Vue + Vite</code> for front a end development stack. </dt>
             <dd>Occasionally sprinkled with <code>Tailwind + Sass</code> for CSS tools.</dd>
             <dt><code>Electron</code> for native desktop applications. </dt>
             <dt><code>Golang, C# .NET, Rust, Node.js</code> for server-side code.</dt>
-            <dt><code> Rust and C++</code> for systems,embedded programming.</dt>
+            <dt><code>Rust and C++</code> for systems,embedded programming.</dt>
             <dt><code>MySQL, MSSQL, PostgreSQL</code> for relational databases. </dt>
             <dt><code>Datastore</code> for non-relational databases. </dt>
             <dt><code>Azure and Google Cloud</code> are my most used cloud platforms. </dt>
             <dt><code>Gitlab and Azure Devops</code> for all things Devops. </dt>
             <dt><code>Docker</code> for all my containerization needs. </dt>
-            <dt><code>Fedora, Debian, Ubuntu </code> are my favorite Linux distributions.</dt>
+            <dt><code>Fedora, Debian</code> are my favorite Linux distributions.</dt>
             <dd>I daily drive <code>Fedora and Windows</code> at the moment.</dd>
           </dl>
         </div>
@@ -82,11 +82,12 @@ let sectionSelection = ref("tech");
             <dd>Web apps, design, UX.</dd>
             <dd>Server code, operational systems development.</dd>
             <dd>Embedded, IoT, automation.</dd>
-            <dd></dd>
+            <dd>Graphics Programming.</dd>
             <dt><code>Hardware design.</code></dt>
             <dd>Embedded systems.</dd>
             <dd>Circuit design.</dd>
             <dd>PCB design.</dd>
+            <dt>Video Games.</dt>
             <dt>Bouldering indoors and outdoors.</dt>
             <dt>Hiking and mushroom foraging.</dt>
             <dt>Playing guitar.</dt>
@@ -158,7 +159,40 @@ html.dark .pfp {
 }
 
 .list-container {
+  display:flex;
+  flex-direction:column;
   margin-bottom: 2rem;
-  min-height:26rem;
 }
+
+@media (min-width: 360px) {
+  .list-container {
+    min-height:582px;
+  }
+}
+
+@media (min-width: 360px) {
+  .section {
+    max-height: 600px;
+    overflow-y: hidden;
+  }
+  .list-container {
+    min-height: 800px;
+  }
+}
+@media (min-width: 460px) {
+  .section {
+    max-height: 512px;
+  }
+}
+@media (min-width: 560px) {
+  .section {
+    max-height: 380px;
+  }
+}
+@media (min-width:640px) {
+  .section {
+    max-height: 360px;
+  }
+}
+
 </style>

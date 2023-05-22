@@ -10,12 +10,12 @@
 
   <h2> Work in progress!</h2>
   <p>
-    this project is a lot of things I didn't intend it to be, I set out to just make a split keyboard but went down the road of learning rust AND learning embedded programming, taking on rusts alpha embedded-hal ecosystem,
-    had to learn pcb design and manufacturing, learning to read data sheets, etc,etc,etc,. its been a long road.
+    this project is a lot of things I didn't intend it to be, I set out to just make a split keyboard but went down the road of learning rust AND learning embedded programming, taking on rust's alpha-state embedded-hal ecosystem,
+    learning to design and manufacture PCBs, learning to read data sheets, etc,etc,etc,. I even took up 3D printing and CAD. its been a long road.
   </p>
   <p>
     <a href="https://github.com/OwnageBanana?tab=repositories" target="none"> check out my github for my progress!</a>
-    I'm currently writing a driver for the IO expander, I've published (very messy) unfinished macropad code with lots left to do, fully designed the keyboards pcb with many mistakes, and acquired most of my materials and built the boards!.
+    I'm currently writing a driver for the IO expander (Working state now), I've published (very messy) unfinished macropad code with lots left to do, fully designed the keyboards pcb with many mistakes, and acquired most of my materials and built the boards!.
   </p>
 
   <!-- This page is a total WIP so if you're looking at the code, don't judge on how lazy this is -->
@@ -26,7 +26,7 @@
       <p>video of how I'm using the display currently. the rp2040's second core's only job is to do this lol</p>
     </div>
     <div class="dev-log">
-      <img src="@assets/images/3d_printed_pcb_small.jpg" alt="Image of a 3d printed pcb" style="width:100%;"/>
+      <img src="@assets/images/3d_printed_pcb_small.jpg" alt="Image of a 3d printed pcb" style="width:100%; margin-top:12rem;"/>
       <p> test pcb to feel out the layout. I exported this from the pcb viewer in Kicad into Freecad and then 3d printed it.</p>
     </div>
     <div class="dev-log">

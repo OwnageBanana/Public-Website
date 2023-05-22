@@ -11,7 +11,7 @@ const nav = function (path) {
 
 <template>
   <!-- <h1>Hi! 👋 </h1> -->
-  <h1>Welcome! </h1>
+  <h1>Welcome!</h1>
 
   <p>
     I'm Adam Mills and this website is dedicated as a repository for anything <!-- <br/> -->
@@ -26,15 +26,13 @@ const nav = function (path) {
   <!-- recent articles -->
   <!-- technical articles -->
   <div id="blog">
-    <h1>
-      Recent Articles
-    </h1>
+    <h2>Recent Works</h2>
     <!-- top x number of blogs -->
       <div class="flow">
         <div class="article-stub">
-          <h2>
+          <h3>
             At-Home Pi Server
-          </h2>
+          </h3>
           <div class="article-stub-body">
             <img src="/src/assets/images/pi_on_floor_small.jpg" alt="image of a raspberry pi on my dirty floor"  width="150" />
             <span>Building a Pi server from the ground up has been a lot of things, primarily its been a bad decision!</span>
@@ -48,9 +46,9 @@ const nav = function (path) {
 
       <div class="reverse-flow">
         <div class="article-stub">
-          <h2>
+          <h3>
             Building a Keyboard
-          </h2>
+          </h3>
           <div class="article-stub-body">
             <img src="/src/assets/images/3d_printed_pcb_small.jpg" alt="Image of a 3d printed pcb" width="150"/>
             <span>A project for the ages, vastly underestimated, poorly planed and awfully timed during a chip shortage
@@ -160,7 +158,7 @@ const nav = function (path) {
   }
 }
 
-.article-stub h2 {
+.article-stub h3 {
   border-bottom: 0.1875rem solid var(--main-darker);
 }
 .reading-list {

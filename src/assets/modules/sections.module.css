@@ -12,49 +12,62 @@
   border:none;
   text-align: left;
   width:100%;
-  padding:1rem 0.5rem;
+  padding:0.5rem 0rem;
   margin: 0.25rem 0;
   transition: all 0.1s ease;
 }
-.section-button:hover {
-  cursor: pointer;
-  background-color:var(--complement-light);
-}
 
-.section-button:hover {
-  cursor: pointer;
-  background-color:var(--complement-light);
-}
+/* essentially disabling sections on small breakpoints and making them look as though they are just heading */
+@media (min-width: 360px){
+  .section-button {
+    padding:1rem 0.5rem;
+  }
+  .section-button:hover {
+    cursor: pointer;
+    background-color:var(--complement-light);
+  }
 
-.section-button::after {
-  content: " +";
-}
-.section-heading.active .section-button::after {
-  content: " -";
-}
-.section {
-  transition: max-height 0.15s linear;
-  height:inherit;
-  overflow-y: auto;
-}
-@media (min-height:640px) {
-    .section {
-    max-height: 530px;
+  .section-button:hover {
+    cursor: pointer;
+    background-color:var(--complement-light);
+  }
+  .section-button::after {
+    content: ":";
+    margin-left: -0.5rem;
+  }
+  .section-button::after {
+    margin-left: 0rem;
+    content: " +";
+  }
+  .section-heading.active .section-button::after {
+    content: " -";
+  }
+  .section.hidden-section {
+    min-height:0;
+    max-height:0;
+    flex:0;
     overflow-y: hidden;
   }
 }
-.section.hidden-section {
-  max-height:0;
-  overflow-y: hidden;
+
+.section {
+  display:flex;
+  flex-direction:column;
+  transition: flex, min-height, max-height 0.15s ease-in-out;
+  height:inherit;
+  overflow-y: auto;
+  flex:1;
 }
+
 
 /*
 Usage:
-<h3>
+<span>
 <button class="section-button" @click="sectionSelection = 'tech'">some of my favorite technology</button>
-</h3>
+</span>
 <div :class="['section', sectionSelection !== 'tech'? 'hidden-section':'']" >
   lorem ipsum
 </div>
-Could probably use css selected or something similar but we like easy styling :)
+ask me how I'd do it without javascript ;)
+and in components using the sections specify a wrapping container with a max height and a max height
  */

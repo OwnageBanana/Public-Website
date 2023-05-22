@@ -68,7 +68,7 @@ const themeChange = function () {
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
-  margin-bottom: 2px;
+  margin-bottom: 16px;
   background-color: var(--main-darker);
 }
 html.dark .header {

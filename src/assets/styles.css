@@ -64,12 +64,20 @@ body {
 
 h1 {
   font-size:2rem;
-  margin: 0px;
+}
+
+h1,h2,h3,h4 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 p {
-  text-align: justify;
   margin:0.5rem 0;
+}
+@media(min-width: 640px){
+  p {
+    text-align: justify;
+  }
 }
 /* @media(min-width: 1024px){
   dt,dd,p {
@@ -77,16 +85,24 @@ p {
   }
 } */
 /* List element */
+dt {
+  padding-left:1rem;
+}
 dt::before {
   content:"•";
   font-family: 'Courier New', Courier, monospace;
-  margin:0 0.5rem;
+  margin-right:0.5rem;
+  margin-left:-1rem;
 }
-
+dd {
+  padding-left:1rem;
+  margin-inline-start: 1.5rem;
+}
 dd::before {
   content:"◦";
   font-family: 'Courier New', Courier, monospace;
-  margin:0 0.5rem;
+  margin-right:0.5rem;
+  margin-left:-1rem;
 }
 
 /* italics element */
