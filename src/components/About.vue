@@ -1,8 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-function created () {
-  console.log("t");
-}
 
 const firstIndustryExperienceDate = new Date(2016, 5, 1);
 const yearsInIndustry = Math.ceil((new Date() - firstIndustryExperienceDate) / (1000 * 60 * 60 * 24 * 365));
@@ -22,16 +19,20 @@ let sectionSelection = ref("tech");
       </div>
       <h2>About Me:</h2>
       <p>
-        As a Software Developer <strong> I take pride in the quality of my work</strong>, I enjoy taking with digital tools to build
-        meaningful products, solving interesting problems; I'm dedicated to making <strong> software that brings joy. </strong> I am and endlessly
+        As a Software Developer <strong> I take pride in the quality of my work</strong>, I enjoy working with digital tools to build
+        meaningful products and solving interesting problems; I'm dedicated to making <strong> software that brings joy. </strong> I am and endlessly
         inquisitive person who need to know how things work, I am always building on my knowledge through studying, tinkering on my own
         projects, and connecting with other's and their projects.
       </p>
       <p>
-        I am always seeking better approaches to problem solving and how teams of developers can work together effectively. <strong>I am constantly revising</strong>
-        my SDL to find improvements, pruning the inefficient processes. <strong> I am honest</strong> and open about when something is not working,
-        I am not afraid to put in the effort to build excellent teams and help others build on themselves, because I believe this makes everyone's life better and is the route
-        to building great products.
+        I am always seeking better approaches to problem solving and how teams of
+        developers can work together effectively.
+        <strong>I am constantly revising</strong>
+        my development lifecycle to find improvements, pruning the inefficiencies.
+        <strong> I am honest</strong> and open about when something is not working,
+        I am not afraid to put in the effort to build excellent teams and help others
+        build on themselves, because I believe this makes everyone's life better
+        and a side effect is building great products.
       </p>
 
       <dl>
