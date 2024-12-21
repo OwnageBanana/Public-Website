@@ -92,7 +92,7 @@ let sectionSelection = ref("tech");
             <dt>Hiking and mushroom foraging.</dt>
             <dt>Playing guitar.</dt>
             <dt>Video Games.</dt>
-            <dt>Reading and journaling and sketching.</dt>
+            <dt>Reading, journaling and sketching.</dt>
           </dl>
         </div>
         <span :class="['section-heading', sectionSelection === 'tools'? 'active' :'']">
