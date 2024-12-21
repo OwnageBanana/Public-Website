@@ -21,7 +21,7 @@ let sectionSelection = ref("tech");
       <p>
         As a Software Developer <strong> I take pride in the quality of my work</strong>, I enjoy working with digital tools to build
         meaningful products and solving interesting problems; I'm dedicated to making <strong> software that brings joy. </strong> I am and endlessly
-        inquisitive person who need to know how things work, I am always building on my knowledge through studying, tinkering on my own
+        inquisitive person who need to know how things work, always building on my knowledge through studying, tinkering on my own
         projects, and connecting with other's and their projects.
       </p>
       <p>
@@ -32,7 +32,7 @@ let sectionSelection = ref("tech");
         <strong> I am honest</strong> and open about when something is not working,
         I am not afraid to put in the effort to build excellent teams and help others
         build on themselves, because I believe this makes everyone's life better
-        and a side effect is building great products.
+        and a side effect is building great software.
       </p>
 
       <dl>
@@ -62,14 +62,14 @@ let sectionSelection = ref("tech");
             <dd>Occasionally sprinkled with <code>Tailwind + Sass</code> for CSS tools.</dd>
             <dt><code>Electron</code> for native desktop applications. </dt>
             <dt><code>Golang, C# .NET, Rust, Node.js</code> for server-side code.</dt>
-            <dt><code>Rust and C++</code> for systems,embedded programming.</dt>
-            <dt><code>MySQL, MSSQL, PostgreSQL</code> for relational databases. </dt>
+            <dt><code>Rust and C++</code> for systems, embedded programming.</dt>
+            <dt><code>MySQL, PostgreSQL, MSSQL</code> for relational databases. </dt>
             <dt><code>Datastore</code> for non-relational databases. </dt>
-            <dt><code>Azure and Google Cloud</code> are my most used cloud platforms. </dt>
+            <dt><code>Google Cloud and Azure</code> are my most used cloud platforms. </dt>
             <dt><code>Gitlab and Azure Devops</code> for all things Devops. </dt>
             <dt><code>Docker</code> for all my containerization needs. </dt>
             <dt><code>Fedora, Debian</code> are my favorite Linux distributions.</dt>
-            <dd>I daily drive <code>Fedora and Windows</code> at the moment.</dd>
+            <dd>I daily drive <code>Fedora</code> with <code>i3</code> at the moment.</dd>
           </dl>
         </div>
         <span :class="['section-heading', sectionSelection === 'interests'? 'active' :'']">
@@ -80,7 +80,7 @@ let sectionSelection = ref("tech");
         <div :class="['section', sectionSelection !== 'interests'? 'hidden-section':'']" >
           <dl>
             <dt><code>Software Development.</code></dt>
-            <dd>Web apps, design, UX.</dd>
+            <dd>Web apps, UX.</dd>
             <dd>Server code, operational systems development.</dd>
             <dd>Embedded, IoT, automation.</dd>
             <dd>Graphics Programming.</dd>
@@ -88,11 +88,11 @@ let sectionSelection = ref("tech");
             <dd>Embedded systems.</dd>
             <dd>Circuit design.</dd>
             <dd>PCB design.</dd>
-            <dt>Video Games.</dt>
-            <dt>Bouldering indoors and outdoors.</dt>
+            <dt>Bouldering, sport climbing: indoors and out.</dt>
             <dt>Hiking and mushroom foraging.</dt>
             <dt>Playing guitar.</dt>
-            <dt>Reading and journaling.</dt>
+            <dt>Video Games.</dt>
+            <dt>Reading and journaling and sketching.</dt>
           </dl>
         </div>
         <span :class="['section-heading', sectionSelection === 'tools'? 'active' :'']">
